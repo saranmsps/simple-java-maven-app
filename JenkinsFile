@@ -6,7 +6,7 @@ maven 'MAVEN'
 jdk 'java1.8.0'
 
 }
-steps {
+stages {
 
 stage{'Build'}{
 steps{sh  "mvn -b -DskipTests  clean package"
