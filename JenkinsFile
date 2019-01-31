@@ -13,6 +13,7 @@ git branch: 'master',url: "https://github.com/saranmsps/simple-java-maven-app.gi
 }
 
 stage('Artifactory configuration')
+{
 steps{
 rtServer(
 id: "ARTIFACTORY_SERVER",
