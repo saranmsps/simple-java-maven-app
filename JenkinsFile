@@ -2,8 +2,8 @@ pipeline{
 
 agent any
 tools{
-MAVEN 'maven3.6.0'
-jdk1.8.0 'java1.8.0'
+maven 'MAVEN'
+jdk 'java1.8.0'
 
 }
 stapes {
