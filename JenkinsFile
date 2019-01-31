@@ -37,7 +37,8 @@ stage('Deploy')
 
 steps{
  
-sh 'scp -i /home/centos/Mars_POC.ppk target/my-app-1.0-SNAPSHOT.jar centos@34.210.245.228:/home/centos'
+sh 'scp -o StrictHostKeyChecking=no -i /tmp/my.pem target/my-app-1.0-SNAPSHOT.jar centos@34.210.245.228:/tmp/'
+sh 'ssh -i /tmp/my.pem centos@34.210.245.228 java -jar /tmp/my-app-1.0-SNAPSHOT.jar'
 //sh 'java -jar target/my-app-1.0-SNAPSHOT.jar'
 
 }
