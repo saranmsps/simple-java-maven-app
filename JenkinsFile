@@ -37,7 +37,7 @@ stage('Deploy')
 
 steps{
  
-sh 'scp -i /home/centos/Mars_POC.ppk target/my-app-1.0-SNAPSHOT.jar centos@52.25.107.19'
+sh 'scp -i /home/centos/Mars_POC.ppk target/my-app-1.0-SNAPSHOT.jar centos@34.210.245.228'
 //sh 'java -jar target/my-app-1.0-SNAPSHOT.jar'
 
 }
