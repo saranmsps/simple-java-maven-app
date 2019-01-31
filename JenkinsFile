@@ -15,7 +15,7 @@ git branch: 'master',url: "https://github.com/saranmsps/simple-java-maven-app.gi
 stage('Artifactory configuration')
 steps{
 rtServer{
-id :" ARTIFACTORY_SERVER",
+id: "ARTIFACTORY_SERVER",
 url: "http://52.42.159.159:8081/artifactory",
 credentialsId: saranmspsJfrog
 }
@@ -58,7 +58,7 @@ stage("publish build info")
 steps{
 rtPublishBuildInfo(
 
-serverId:  "ARTIFACTORY_SERVER"
+serverId: "ARTIFACTORY_SERVER"
 )
 }
 }
