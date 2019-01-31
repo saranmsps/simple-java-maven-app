@@ -49,7 +49,7 @@ tool: MAVEN,
 pom: 'pom.xml',
 goals: 'clean install',
 deployement: "MAVEN_DEPLOYER",
-resolverId: 'MAVEN_RESOLVER"
+resolverId: "MAVEN_RESOLVER"
 )
 }
 }
