@@ -38,7 +38,7 @@ snapshotRepo: "libs-snapshot"
 }
 }
 
-stage("Exec Maven')
+stage("Exec Maven")
 {
 
 steps{
