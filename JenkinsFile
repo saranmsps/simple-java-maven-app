@@ -17,7 +17,7 @@ stage('Artifactory configuration')
 steps{
 rtServer(
 id: "ARTIFACTORY_SERVER",
-url: "http://52.42.159.159:8081/artifactory",
+url: 'http://52.42.159.159:8081/artifactory',
 credentialsId: 'saranmspsJfrog'
 )
 
