@@ -12,10 +12,6 @@ pipeline{
  
       steps { 
  
-
-
- 
- 
     withSonarQubeEnv('saransonar') { 
  
       // requires SonarQube Scanner for Maven 3.2+ 
